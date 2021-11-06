@@ -1,0 +1,10 @@
+[requires]                     # The Conan packages which are used in the application
+abseil/20210324.2
+
+[generators]                   # Generators create build system files that capture the dependency information,
+cmake_find_package
+cmake_paths                          # as well as configuration information from Conan settings and options
+
+[options]                      # Options here override options upstream in the dependency graph
+
+[imports]                      # Copies files from the cache to the current working directory
