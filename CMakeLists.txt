@@ -94,7 +94,9 @@ export(TARGETS
   layout
   APPEND FILE lib/cmake/MyProject/MyProjectTargets.cmake)
 
-
+export(TARGETS
+  flat_hash_set
+  APPEND FILE lib/cmake/MyProject/MyProjectTargets.cmake)
 
 # Setup for downstream clients of MyProject?
 install(EXPORT MyProjectTargets DESTINATION lib/cmake/MyProject COMPONENT cmake-exports)
